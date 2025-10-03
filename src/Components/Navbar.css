@@ -1,0 +1,119 @@
+/* Navbar Container */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  padding: 0;
+  width: 100vw; /* ✅ stretches full screen */
+  height: 64px;
+  z-index: 1000;
+  top: 0;
+}
+
+.navbar-container {
+  /* max-width: 1200px; */
+  margin: 0;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2563eb; /* Tailwind blue-600 */
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Nav Lists */
+.nav-lists {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ul-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+  color: #4b5563; /* gray-700 */
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+.list{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.list:hover {
+  color: #2563eb;
+}
+.logo-img{
+  width: 67px;
+  height: 66px;
+  /* border-radius: 80%; */
+  object-fit: cover;
+  margin-right: 10px;
+}
+.logo-img:hover{
+  transform: scale(1.05);
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #2563eb;
+  cursor: pointer;
+}
+
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+    gap: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-200%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+  }
+}

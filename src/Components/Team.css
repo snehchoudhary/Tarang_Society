@@ -1,0 +1,71 @@
+.team-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  color: rgba(243, 39, 158, 0.947);
+  margin-bottom: 50px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.team-card {
+  background: rgb(254, 243, 230);
+  padding: 25px 15px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(243, 39, 158, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(243, 39, 158, 0.5);
+}
+
+.team-img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(243, 39, 158, 0.7);
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: rgba(243, 39, 158, 0.947);
+}
+
+.team-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.team-social a {
+  margin: 0 5px;
+  color: rgba(243, 39, 158, 0.947);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.team-social a:hover {
+  color: rgba(243, 39, 158, 1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-section h2 {
+    font-size: 2rem;
+  }
+}

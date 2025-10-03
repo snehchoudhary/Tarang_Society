@@ -1,0 +1,3 @@
+- [x] Fix image paths in Team.jsx (remove "public/" prefix)
+- [x] Fix typo in role: "Event Mangaer" to "Event Manager"
+- [ ] Run dev server and check rendering
