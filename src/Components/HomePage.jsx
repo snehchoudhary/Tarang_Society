@@ -6,11 +6,11 @@ import './HomePage.css'
         <div className='homepage'>
            <div className='text-content'>
                <h1>"One Campus. One Community. One Sphere"</h1>
-               
-                <button className='btn'>Explore More</button>
+
+                <button className='btn'>Login</button>
            </div>
-           <img className='img' src="public/Tarang Logo1.png" alt="Tarang Logo" />
-          
+           <img className='img' src="/Tarang Logo1.png" alt="Tarang Logo" />
+
         </div>
     )
 }

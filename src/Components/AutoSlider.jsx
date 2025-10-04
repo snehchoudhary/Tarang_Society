@@ -1,15 +1,18 @@
 import react, {useEffect, useRef} from "react";
 import './AutoSlider.css';
+import {useNavigate} from "react-router-dom";
 
 const cards =[
-    {id: 1, title: "Tech Club", description: "Where Ideas Meet Innovation."},
-    {id: 2, title: "Cultural Club", description: "Celebrate diversity, create unity."},
-    {id: 3, title: "Literary Club", description: "Let's idea take flight through words."},
-    {id: 4, title: "Photography Club", description: "Where every click tells a story."},
+    {id: 1, title: "Tech Club", description: "Where Ideas Meet Innovation.", route: "/tech-club"},
+    {id: 2, title: "Cultural Club", description: "Celebrate diversity, create unity.", route: "/cultural-club"},
+    {id: 3, title: "Literary Club", description: "Let's idea take flight through words.", route: "/literary-club"},
+    {id: 4, title: "Photography Club", description: "Where every click tells a story.", route: "/photography-club"},
   
 ];
 
  const AutoSlider = () => {
+
+    const navigate = useNavigate();
 //     const sliderRef = useRef(null);
 
 //     useEffect(() => {
@@ -41,7 +44,7 @@ const cards =[
                 <div key={card.id} className="card">
                     <h3>{card.title}</h3>
                     <p>{card.description}</p>
-                    <button className="explore-btn">Explore More</button>
+<a href={card.route} target="_blank" rel="noopener noreferrer" className="explore-btn">Explore More</a>
                 </div>
             ))}
          </div>

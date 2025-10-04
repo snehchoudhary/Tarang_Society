@@ -1,0 +1,83 @@
+.footer {
+  background: rgba(243, 39, 158, 0.947);
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 65px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.BPS-logo img,
+.Tarang-logo img {
+  max-width: 150px;
+  height: auto;
+  margin: 0 20px;
+  border-radius: 30px;
+}
+
+.text h2 {
+  font-size: 1.8rem;
+  margin: 15px 0 5px;
+}
+
+.text h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #f0e6f7;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.contact a {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: rgb(254, 243, 230);
+}
+
+@media (max-width: 768px) {
+  .footer-logos {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .BPS-logo img,
+  .Tarang-logo img {
+    max-width: 120px;
+    margin: 0;
+  }
+
+  .text h2 {
+    font-size: 1.4rem;
+  }
+
+  .text h3 {
+    font-size: 1rem;
+  }
+
+  .contact a {
+    font-size: 1.4rem;
+    margin: 0 8px;
+  }
+}

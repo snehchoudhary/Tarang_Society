@@ -2,15 +2,16 @@ import React from "react";
 import "./Gallery.css";
 
 const galleryImages = [
-    "public/Gallery01.jpeg",
-    "public/Gallery02.jpeg",
-    "public/Gallery03.jpeg",
-    "public/Gallery04.jpeg",
-    "public/Gallery05.jpeg",
-    "public/Gallery06.jpeg",
-    "public/Gallery07.jpeg",
-    "public/Gallery08.jpeg",
-    "public/gallery09.jpeg",
+    "/Gallery01.jpeg",
+    "/Gallery02.jpeg",
+    "/Gallery03.jpeg",
+    "/Gallery04.jpeg",
+    "/Gallery05.jpeg",
+    "/Gallery06.jpeg",
+    "/Gallery07.jpeg",
+    "/Gallery08.jpeg",
+    "/gallery09.jpeg",
+    "/Gallery10.jpeg"
 ]
 
 const Gallery = () => {
