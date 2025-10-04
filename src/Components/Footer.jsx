@@ -22,11 +22,11 @@ const Footer = () => {
     <div className="footer">
      <div className="footer-logos">
      <div className="BPS-logo">
-       <img src="/BPSMV Logo.jpg" alt="BPSMV" />
+       <img src="/BPSMV_Logo.jpg" alt="BPSMV" />
      </div>
 
      <div className="Tarang-logo">
-      <img src="/Tarang Logo1.png" alt="Tarang" />
+      <img src="/Tarang_Logo1.png" alt="Tarang" />
      </div>
        </div>
      <div className="text">

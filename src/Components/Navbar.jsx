@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Brand / Logo */}
         <div className="logo">
-          <img className="logo-img" src="/BPSMV Logo.jpg" alt="BPS logo" /><span>Tarang</span></div>
+          <img className="logo-img" src="/BPSMV_Logo.jpg" alt="BPS logo" /><span>Tarang</span></div>
 
         {/* navbar list */}
         <div className="nav-lists">

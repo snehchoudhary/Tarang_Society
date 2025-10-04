@@ -9,7 +9,7 @@ import './HomePage.css'
 
                 <button className='btn'>Login</button>
            </div>
-           <img className='img' src="/Tarang Logo1.png" alt="Tarang Logo" />
+           <img className='img' src="/Tarang_Logo1.png" alt="Tarang Logo" />
 
         </div>
     )
