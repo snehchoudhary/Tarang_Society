@@ -13,16 +13,16 @@ import gallery10 from '../assets/gallery01.jpg'
 
 
 const galleryImages = [
-  "src/assets/gallery01.jpg",
-  "src/assets/gallery02.jpg",
-  "src/assets/gallery03.jpg",
-  "src/assets/gallery04.jpg",
-  "src/assets/gallery05.jpg",
-  "src/assets/gallery06.jpg",
-  "src/assets/gallery07.jpg",
-  "src/assets/gallery08.jpg",
-  "src/assets/gallery09.jpg",
-  "src/assets/gallery10.jpg"
+  gallery01,
+  gallery02,
+  gallery03,
+  gallery04,
+  gallery05,
+  gallery06,
+  gallery07,
+  gallery08,
+  gallery09,
+  gallery10
 ]
 
 const Gallery = () => {
