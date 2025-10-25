@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import "./Navbar.css"; // ✅ Import the CSS file
+import BPSMV_logo from "../assets/Bpsmv_logo.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Brand / Logo */}
         <div className="logo">
-          <img className="logo-img" src="/BPSMV_Logo.jpg" alt="BPS logo" /><span>Tarang</span></div>
+          <img className="logo-img" src={BPSMV_logo} alt="BPS logo" /><span>Tarang</span></div>
 
         {/* navbar list */}
         <div className="nav-lists">

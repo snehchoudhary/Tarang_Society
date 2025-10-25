@@ -5,7 +5,7 @@
   background: #f9fbff;
   line-height: 1.6;
   overflow-x: hidden;
-  background-image: url(../../public/bg-tech.jpeg);
+  background-image: url(../assets/bg-tech1.jpg);
   background-repeat: no-repeat;        /* ✅ Prevents repeating */
   background-size: cover;              /* ✅ Makes it cover the whole page */
   background-position: center;         /* ✅ Centers the image */
@@ -175,6 +175,57 @@ section h2::after {
   transform: translateY(-5px);
 }
 
+/* 🌟 Main Member Card (appears above the two members) */
+.main-member-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 260px;
+  margin: 0 auto 50px; /* centers and adds spacing below */
+  transition: transform 0.3s;
+}
+
+.main-member-card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+}
+
+.main-member-card h3 {
+  font-size: 20px;
+  /* color: #333; */
+  margin-bottom: 6px;
+}
+
+.main-member-card p {
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.main-member-card:hover {
+  transform: scale(1.05);
+}
+
+.main-member-card .linkedin-link {
+  display: inline-block;
+  margin-top: 5px;
+  color: #0077b5;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.main-member-card .linkedin-link:hover {
+  text-decoration: underline;
+}
+
+
 /* 🤝 Join */
 .join h2{
   font-size: 55px;
@@ -200,7 +251,7 @@ section h2::after {
 
 /* 📬 Contact Section */
 .contact {
-  background: #4f46e5; /* Deep blue/purple background */
+  background: #4f46e5; /*Deep blue/purple background */
   color: #fff;
   padding: 60px 20px;
   text-align: center;
@@ -208,11 +259,16 @@ section h2::after {
   margin: 80px 10%;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .contact h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   position: relative;
 }
 
@@ -226,28 +282,45 @@ section h2::after {
   border-radius: 2px;
 }
 
-.contact p {
+.contact-link{
   font-size: 1.2rem;
-  margin: 8px 0;
-}
-
-.contact a {
-  color: #ffecb3; /* Accent color for links */
-  font-weight: bold;
+  color: #ffecb3;
+  font-weight: 500;
   text-decoration: underline;
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.contact a:hover {
+.contact-link:hover{
   color: #fff;
   transform: scale(1.05);
 }
 
-/* Optional: subtle hover effect on entire footer */
-.contact:hover {
+.contact:hover{
   transform: translateY(-5px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
 }
+/* .contact p {
+  font-size: 1.2rem;
+  margin: 8px 0;
+} */
+
+/* .contact a {
+  color: #ffecb3; /* Accent color for links */
+  /* font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s ease, transform 0.2s ease;
+} */
+
+/* .contact a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}  */
+
+/* Optional: subtle hover effect on entire footer */
+/* .contact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+} */
 
 
 /* ✨ Animations */

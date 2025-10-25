@@ -1,5 +1,8 @@
 import React from "react";
 import "./PhotographyClub.css";
+import Photography_Head from '../assets/Photogrphy_Head.jpg'
+import Photography_DeputyHead from '../assets/Photography_DeputyHead.jpg'
+import photographyMentor from '../assets/photographyMentor.jpg'
 
 export default function PhotographyClub() {
   return (
@@ -9,7 +12,10 @@ export default function PhotographyClub() {
         <div className="hero-overlay">
           <h1> 📸 Photography Club</h1>
           <p>📸✨ Capture the Magic, Frame the Memories, Every Click Tells a Story 🌟📷</p>
-          <a href="#join" className="cta-btn">Join the Revolution</a>
+          <a href="https://forms.gle/vgKYLac1EWSXrrUk7"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-btn">Join the Revolution</a>
         </div>
       </section>
 
@@ -59,22 +65,49 @@ export default function PhotographyClub() {
         </ul>
       </section>
 
-      {/* 👥 Meet the Team */}
+      {/* 👥 Meet the Team
       <section className="team fade-in">
         <h2>Meet the Team</h2>
         <div className="team-grid">
           <div className="member-card">
-            <img src="/Astha_President.jpeg" alt="Muskan" />
-            <h3>Muskan Phogat</h3>
+            <img src = {Photography_Head} alt="Tejasvi" />
+            <h3>Tejasvi Singh</h3>
             <p>Head</p>
           </div>
           <div className="member-card">
-            <img src="/Himanshi_VicePresident.jpeg" alt="Ishika" />
-            <h3>Ishika</h3>
+            <img src={Photography_DeputyHead} alt="Muskan" />
+            <h3>Muskan Phogat</h3>
+            <p>Deputy Head</p>
+          </div>
+        </div>
+      </section> */}
+
+       {/* 👥 Meet the Team */}
+      <section className="team fade-in">
+        <h2>Meet the Team</h2>
+
+        {/* Main member on top */}
+        <div className="main-member-card">
+          <img src={photographyMentor} alt="Mentor" />
+          <h3>Mrs. Meenakshi</h3>
+          <p>Mentor</p>
+        </div>
+
+        {/* Two members below */}
+        <div className="team-grid">
+          <div className="member-card">
+            <img src={Photography_Head} alt="Tejasvi" />
+            <h3>Tejasvi Singh</h3>
+            <p>Head</p>
+          </div>
+          <div className="member-card">
+            <img src={Photography_DeputyHead} alt="Muskan" />
+            <h3>Muskan Phogat</h3>
             <p>Deputy Head</p>
           </div>
         </div>
       </section>
+
 
       {/* 🤝 Join Us */}
       <section id="join" className="join fade-in">
@@ -93,10 +126,10 @@ export default function PhotographyClub() {
       {/* 📬 Contact */}
       <footer className="contact fade-in">
         <h2>Contact Us</h2>
-        <p>📧 photographyclub@college.edu</p>
+        <p>📧 tarangcseit@bpswomenuniversity.ac.in</p>
         <p>
           🔗 Follow us:{" "}
-          <a href="https://instagram.com/techclub" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/tarang_cse.it?igsh=ZzdpM3YyYzUydmox" target="_blank" rel="noopener noreferrer">
             Instagram
           </a>
         </p>

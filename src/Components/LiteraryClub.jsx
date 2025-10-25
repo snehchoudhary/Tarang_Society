@@ -1,5 +1,8 @@
 import React from "react";
 import "./LiteraryClub.css";
+import Literary_Head from '../assets/Literary_Head.jpg'
+import Literary_DeputyHead from '../assets/Literary_DeputyHead.jpg'
+import literatureMentor from '../assets/literatureMentor.jpg'
 
 export default function LiteraryClub() {
   return (
@@ -9,7 +12,10 @@ export default function LiteraryClub() {
         <div className="hero-overlay">
           <h1>📚 Literary Club</h1>
           <p>Unleash Your Imagination, Where Words Take Flight ✍️📚✨</p>
-          <a href="#join" className="cta-btn">Join the Revolution</a>
+          <a href="https://forms.gle/vgKYLac1EWSXrrUk7"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-btn">Join the Revolution</a>
         </div>
       </section>
 
@@ -59,29 +65,80 @@ export default function LiteraryClub() {
         </ul>
       </section>
 
-      {/* 👥 Meet the Team */}
+      {/* 👥 Meet the Team
       <section className="team fade-in">
         <h2>Meet the Team</h2>
         <div className="team-grid">
           <div className="member-card">
-            <img src="/Astha_President.jpeg" alt="Kanak" />
+            <img src={Literary_Head} alt="Kanak Sharma" />
             <h3>Kanak Sharma</h3>
             <p>Head</p>
           </div>
           <div className="member-card">
-            <img src="/Himanshi_VicePresident.jpeg" alt="Ishika" />
-            <h3>Ishika</h3>
+            <img src={Literary_DeputyHead} alt="Rakshita Rawat" />
+            <h3>Rakshita Rawat</h3>
             <p>Deputy Head</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
+{/* 👥 Meet the Team */}
+<section className="team fade-in">
+  <h2>Meet the Team</h2>
+
+  {/* Main Member */}
+  <div className="main-member-card">
+    <img src={literatureMentor} alt="Literature Mentor" />
+    <h3>Dr. Vinod Saroha</h3>
+    <p>Mentor</p>
+    <a
+      href="https://www.linkedin.com/in/aaradhya-sharma"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="linkedin-link"
+    >
+      🔗 LinkedIn
+    </a>
+  </div>
+
+  {/* Sub Members */}
+  <div className="team-grid">
+    <div className="member-card">
+      <img src={Literary_Head} alt="Kanak Sharma" />
+      <h3>Kanak Sharma</h3>
+      <p>Head</p>
+      <a
+        href="https://www.linkedin.com/in/kanak--sharma"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="linkedin-link"
+      >
+        🔗 LinkedIn
+      </a>
+    </div>
+
+    <div className="member-card">
+      <img src={Literary_DeputyHead} alt="Rakshita Rawat" />
+      <h3>Rakshita Rawat</h3>
+      <p>Deputy Head</p>
+      <a
+        href="https://www.linkedin.com/in/rakshita-rawat-b67b66270/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="linkedin-link"
+      >
+        🔗 LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+ 
       {/* 🤝 Join Us */}
       <section id="join" className="join fade-in">
         <h2>Join Us</h2>
         <p>📖✨ Love words, stories, or debating ideas? The Literary Club is your creative playground! Join us to write, read, share, and express yourself while connecting with fellow bookworms and storytellers. Let your imagination soar and your voice be heard! 🖋️💬📚</p>
         <a
-          href="https://forms.gle/your-form-link"
+          href="https://forms.gle/vgKYLac1EWSXrrUk7"
           target="_blank"
           rel="noopener noreferrer"
           className="join-btn"
@@ -93,10 +150,10 @@ export default function LiteraryClub() {
       {/* 📬 Contact */}
       <footer className="contact fade-in">
         <h2>Contact Us</h2>
-        <p>📧 literaryclub@college.edu</p>
+        <p>📧 tarangcseit@bpswomenuniversity.ac.in</p>
         <p>
           🔗 Follow us:{" "}
-          <a href="https://instagram.com/techclub" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/tarang_cse.it?igsh=ZzdpM3YyYzUydmox" target="_blank" rel="noopener noreferrer">
             Instagram
           </a>
         </p>

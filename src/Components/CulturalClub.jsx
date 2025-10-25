@@ -1,5 +1,8 @@
 import React from "react";
 import "./CulturalClub.css";
+import Cultural_Head from '../assets/Cultural_Head.jpg'
+import Cultural_DeputyHead from '../assets/Cultural_DeputyHead.JPG'
+import culturalMentor from '../assets/culturalMentor.jpg'
 
 export default function CulturalClub() {
   return (
@@ -9,7 +12,10 @@ export default function CulturalClub() {
         <div className="hero-overlay">
           <h1>🎭 Cultural Club</h1>
           <p>🎭 Celebrate Diversity, 🎶 Create Unity, Where Culture Comes Alive! 🌟</p>
-          <a href="#join" className="cta-btn">Join the Revolution</a>
+          <a href="https://forms.gle/vgKYLac1EWSXrrUk7"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-btn">Join the Revolution</a>
         </div>
       </section>
 
@@ -59,29 +65,56 @@ export default function CulturalClub() {
         </ul>
       </section>
 
-      {/* 👥 Meet the Team */}
+      {/* 👥 Meet the Team
       <section className="team fade-in">
         <h2>Meet the Team</h2>
         <div className="team-grid">
           <div className="member-card">
-            <img src="/Astha_President.jpeg" alt="Tanisha" />
-            <h3>Tanisha</h3>
+            <img src={Cultural_Head} alt="Tanisha" />
+            <h3>Tanisha Bhatia</h3>
             <p>Head</p>
           </div>
           <div className="member-card">
-            <img src="/Himanshi_VicePresident.jpeg" alt="Ishiqa" />
+            <img src={Cultural_DeputyHead} alt="Ishiqa" />
             <h3>Ishiqa</h3>
             <p>Deputy Head</p>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* 👥 Meet the Team */}
+<section className="team fade-in">
+  <h2>Meet the Team</h2>
+
+  {/* Main member on top */}
+  <div className="main-member-card">
+    <img src={culturalMentor} alt="Mentor" />
+    <h3>Mrs. Manju</h3>
+    <p>Mentor</p>
+  </div>
+
+  {/* Two members below */}
+  <div className="team-grid">
+    <div className="member-card">
+      <img src={Cultural_Head} alt="Tanisha" />
+      <h3>Tanisha Bhatia</h3>
+      <p>Head</p>
+    </div>
+    <div className="member-card">
+      <img src={Cultural_DeputyHead} alt="Ishika" />
+      <h3>Ishika</h3>
+      <p>Deputy Head</p>
+    </div>
+  </div>
+</section>
+
 
       {/* 🤝 Join Us */}
       <section id="join" className="join fade-in">
         <h2>Join Us</h2>
         <p>🎉✨ Love music, dance, art, or theater? The Cultural Club is your stage to shine! Join us to celebrate diversity, express your creativity, make new friends, and be part of unforgettable campus events. Let’s create memories and keep the spirit of culture alive! 💃🕺🎭🎨</p>
         <a
-          href="https://forms.gle/your-form-link"
+          href="https://forms.gle/vgKYLac1EWSXrrUk7"
           target="_blank"
           rel="noopener noreferrer"
           className="join-btn"
@@ -93,10 +126,10 @@ export default function CulturalClub() {
       {/* 📬 Contact */}
       <footer className="contact fade-in">
         <h2>Contact Us</h2>
-        <p>📧 culturalclub@college.edu</p>
+        <p>📧 tarangcseit@bpswomenuniversity.ac.in</p>
         <p>
           🔗 Follow us:{" "}
-          <a href="https://instagram.com/techclub" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/tarang_cse.it?igsh=ZzdpM3YyYzUydmox" target="_blank" rel="noopener noreferrer">
             Instagram
           </a>
         </p>
