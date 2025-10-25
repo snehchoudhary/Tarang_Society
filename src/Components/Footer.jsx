@@ -50,7 +50,7 @@
 import React from "react";
 import "./Footer.css";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import BPSMV_logo from "../assets/BPSMV_logo.jpg";
+import Bpsmv_logo from "../assets/Bpsmv_logo.jpg";
 import Tarang_logo from "../assets/Tarang_logo.jpg";
 
 const GmailIcon = () => (
@@ -70,7 +70,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
-          <img src={BPSMV_logo} alt="BPSMV" />
+          <img src={Bpsmv_logo} alt="BPSMV" />
         </div>
 
         <div className="footer-text">
