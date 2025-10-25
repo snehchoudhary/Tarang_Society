@@ -48,7 +48,7 @@
 
 
 import React from "react";
-import "./footer.css";
+import "./Footer.css";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import BPSMV_logo from "../assets/BPSMV_logo.jpg";
 import Tarang_logo from "../assets/Tarang_logo.jpg";
